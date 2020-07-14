@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		F35F88A124BC516900345080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88A024BC516900345080 /* AppDelegate.swift */; };
 		F35F88A324BC516900345080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88A224BC516900345080 /* SceneDelegate.swift */; };
-		F35F88A524BC516900345080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88A424BC516900345080 /* ViewController.swift */; };
+		F35F88A524BC516900345080 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88A424BC516900345080 /* ContactViewController.swift */; };
 		F35F88A824BC516900345080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35F88A624BC516900345080 /* Main.storyboard */; };
 		F35F88AA24BC516900345080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35F88A924BC516900345080 /* Assets.xcassets */; };
 		F35F88AD24BC516900345080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35F88AB24BC516900345080 /* LaunchScreen.storyboard */; };
 		F35F88B824BC516A00345080 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88B724BC516A00345080 /* ContactsTests.swift */; };
+		F35F88C324BC7BAE00345080 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88C224BC7BAE00345080 /* Contact.swift */; };
+		F35F88C524BC906D00345080 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88C424BC906D00345080 /* ContactTableViewCell.swift */; };
+		F35F88C924BC9B9B00345080 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F88C824BC9B9B00345080 /* ContactTableViewController.swift */; };
+		F3684BED24BDA99B00217EA9 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3684BEC24BDA99B00217EA9 /* UIImageExtension.swift */; };
+		F3684BEF24BDD5CD00217EA9 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3684BEE24BDD5CD00217EA9 /* ContactDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +35,7 @@
 		F35F889D24BC516900345080 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35F88A024BC516900345080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F35F88A224BC516900345080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F35F88A424BC516900345080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F35F88A424BC516900345080 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		F35F88A724BC516900345080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F35F88A924BC516900345080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F35F88AC24BC516900345080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		F35F88B324BC516A00345080 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35F88B724BC516A00345080 /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
 		F35F88B924BC516A00345080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F35F88C224BC7BAE00345080 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		F35F88C424BC906D00345080 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		F35F88C824BC9B9B00345080 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		F3684BEC24BDA99B00217EA9 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		F3684BEE24BDD5CD00217EA9 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +89,18 @@
 		F35F889F24BC516900345080 /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				F35F88C224BC7BAE00345080 /* Contact.swift */,
+				F35F88C424BC906D00345080 /* ContactTableViewCell.swift */,
 				F35F88A024BC516900345080 /* AppDelegate.swift */,
 				F35F88A224BC516900345080 /* SceneDelegate.swift */,
-				F35F88A424BC516900345080 /* ViewController.swift */,
+				F35F88A424BC516900345080 /* ContactViewController.swift */,
 				F35F88A624BC516900345080 /* Main.storyboard */,
 				F35F88A924BC516900345080 /* Assets.xcassets */,
 				F35F88AB24BC516900345080 /* LaunchScreen.storyboard */,
 				F35F88AE24BC516900345080 /* Info.plist */,
+				F35F88C824BC9B9B00345080 /* ContactTableViewController.swift */,
+				F3684BEC24BDA99B00217EA9 /* UIImageExtension.swift */,
+				F3684BEE24BDD5CD00217EA9 /* ContactDetailViewController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -200,8 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35F88A524BC516900345080 /* ViewController.swift in Sources */,
+				F35F88C324BC7BAE00345080 /* Contact.swift in Sources */,
+				F35F88C524BC906D00345080 /* ContactTableViewCell.swift in Sources */,
+				F3684BED24BDA99B00217EA9 /* UIImageExtension.swift in Sources */,
+				F35F88C924BC9B9B00345080 /* ContactTableViewController.swift in Sources */,
+				F35F88A524BC516900345080 /* ContactViewController.swift in Sources */,
 				F35F88A124BC516900345080 /* AppDelegate.swift in Sources */,
+				F3684BEF24BDD5CD00217EA9 /* ContactDetailViewController.swift in Sources */,
 				F35F88A324BC516900345080 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djimon.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,7 +407,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djimon.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
